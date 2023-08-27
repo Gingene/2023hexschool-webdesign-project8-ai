@@ -1,0 +1,9 @@
+@mixin white-btn {
+  @extend .btn;
+  background-color: #fff;
+  color: #000;
+}
+
+.white-btn {
+  @include white-btn;
+}

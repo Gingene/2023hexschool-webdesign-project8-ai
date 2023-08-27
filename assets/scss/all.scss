@@ -1,5 +1,49 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./utils/variables";
+@import "./helper/myutilitiesb";
 
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
 
-@import './pages/index.scss';
+@import "../../node_modules/bootstrap";
+@import "./base/base";
+@import "./components/components";
+@import "./helper/myutilities";
+// @import "./helpers/utilities";
+// @import "../../node_modules/bootstrap/scss/utilities/api";
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.test {
+  background-image: url(../images/index01.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px);
+  z-index: -5;
+}
+
+@mixin rowbar {
+  height: 40px;
+  background: linear-gradient(90deg, #7000ff 0%, #11002d 100%);
+}
+
+.rowbar1 {
+  @include rowbar;
+}
+
+.swiper-slide img,
+.swiper-slide figure {
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
+  @include pc {
+    aspect-ratio: initial;
+    height: 560px;
+  }
+}

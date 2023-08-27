@@ -1,0 +1,65 @@
+$utilities: (
+  "font-size1": (
+    rfs: true,
+    responsive: true,
+    property: font-size,
+    class: fs1,
+    values: $font-sizes,
+  ),
+  "letter-spacing": (
+    responsive: true,
+    property: letter-spacing,
+    class: ls,
+    values: (
+      1: 1rem,
+      1s: 1.25rem,
+      1m: 1.5rem,
+      2: 2rem,
+      2m: 2.5rem,
+      3: 3rem,
+    ),
+  ),
+  "border": (
+    property: border,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+        var(--#{$prefix}border-color),
+      0: 0,
+    ),
+  ),
+  "border-top": (
+    property: border-top,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+        var(--#{$prefix}border-color),
+      0: 0,
+    ),
+  ),
+  "border-end": (
+    property: border-right,
+    responsive: true,
+    class: border-end1,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+        var(--#{$prefix}border-color),
+      0: 0,
+    ),
+  ),
+  "border-bottom": (
+    property: border-bottom,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+        var(--#{$prefix}border-color),
+      0: 0,
+    ),
+  ),
+  "border-start": (
+    property: border-left,
+    class: border-start,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+        var(--#{$prefix}border-color),
+      0: 0,
+    ),
+  ),
+);

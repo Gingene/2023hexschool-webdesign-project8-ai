@@ -1,0 +1,23 @@
+@mixin main-title($ls1, $ls2) {
+  text-align: center;
+  letter-spacing: $ls1;
+  @include xl {
+    letter-spacing: $ls2;
+  }
+}
+
+.home-title {
+  @include main-title(26px, 80px);
+  @extend .ff-sh;
+  font-size: 1.25rem;
+  font-weight: 400;
+  @include pc {
+    font-size: 2rem;
+  }
+}
+
+.home-subtitle {
+  @include main-title(4.8px, 16px);
+  font-size: 1rem;
+  font-weight: 700;
+}
