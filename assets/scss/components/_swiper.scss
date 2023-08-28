@@ -1,3 +1,21 @@
+.sw1 img,
+.sw1 figure {
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
+  @include pc {
+    aspect-ratio: initial;
+    height: 560px;
+  }
+}
+
+.sw3 img,
+.sw3 figure {
+  aspect-ratio: 1.04/1;
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-share {
   background-color: #380c7e;
 }

@@ -1,0 +1,24 @@
+@mixin product-nav-tag {
+  @extend .ff-sh;
+  @extend .btn;
+  @extend .btn-black;
+  @extend .rounded-pill;
+  @extend .border;
+  @extend .py-s;
+  @extend .px-1;
+  @extend .px-lg-5;
+}
+
+.product-nav-tag {
+  @include product-nav-tag;
+  color: white;
+  &:hover {
+    color: $primary;
+    background-color: $white;
+  }
+}
+
+.product-nav-tag.active {
+  color: $black;
+  background-color: $white;
+}

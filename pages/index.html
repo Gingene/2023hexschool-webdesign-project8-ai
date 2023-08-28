@@ -8,8 +8,8 @@
     <%- include('./layout/head'); -%>
   </head>
   <body>
+    <%- include('./layout/header'); -%>
     <main class="bg-lg">
-      <%- include('./layout/header'); -%>
       <div class="pt-2s">
         <div class="container">
           <div
@@ -74,8 +74,9 @@
         background: radial-gradient(50% 50% at 50% 50%, #300871 0%, #000 100%);
         position: relative;
         z-index: 0;
+        height: 1089px;
       "
-      class="vh-100 pt-banner"
+      class="pt-banner"
     >
       <figure
         class="test col-12 col-lg-6 position-absolute top-0 vh-100"
@@ -541,7 +542,7 @@
               <div class="swiper-scrollbar position-relative"></div>
               <p>SCROLL</p>
             </div>
-            <div>
+            <div class="d-none d-lg-block">
               <p class="mb-0">
                 若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。
               </p>
@@ -569,7 +570,7 @@
                 <circle cx="6" cy="6" r="6" fill="white" />
               </svg>
               <div
-                style="border: 6px solid white; width: 10vw"
+                style="border: 6px solid white; width: 124px; height: 0"
                 class="rounded-pill ms-m"
               ></div>
             </div>

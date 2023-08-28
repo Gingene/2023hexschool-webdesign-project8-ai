@@ -318,6 +318,8 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
+  "black": $black,
+  "white": $white,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -431,11 +433,15 @@ $spacers: (
   4: $spacer * 4,
   5: $spacer * 5,
   6: $spacer * 6,
+  6m: $spacer * 6.5,
   7: $spacer * 7,
+  7m: $spacer * 7.5,
   8: $spacer * 8,
   8m: $spacer * 8.5,
   9: $spacer * 9,
   10: $spacer * 10,
+  13: $spacer * 13,
+  13m: $spacer * 13.5,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -471,7 +477,8 @@ $body-emphasis-color: $black !default;
 //
 // Style anchor elements.
 
-$link-color: $primary !default;
+// $link-color: $primary !default;
+$link-color: $white !default; //改
 $link-decoration: none !default; // 改
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
@@ -558,7 +565,8 @@ $border-widths: (
   5: 5px,
 ) !default;
 $border-style: solid !default;
-$border-color: $gray-300 !default;
+// $border-color: $gray-300 !default;
+$border-color: $black !default; // 改
 $border-color-translucent: rgba($black, 0.175) !default;
 // scss-docs-end border-variables
 
@@ -691,7 +699,8 @@ $headings-margin-bottom: $spacer * 0.5 !default;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;
-$headings-line-height: 1.2 !default;
+// $headings-line-height: 1.2 !default;
+$headings-line-height: 1.5 !default; // 改
 $headings-color: inherit !default;
 // scss-docs-end headings-variables
 
