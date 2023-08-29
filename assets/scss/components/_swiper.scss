@@ -24,3 +24,10 @@
 .swiper-scrollbar-drag {
   background-color: white !important;
 }
+
+.sw4-slide img {
+  display: block;
+  width: 100%;
+  height: 315px;
+  object-fit: cover;
+}

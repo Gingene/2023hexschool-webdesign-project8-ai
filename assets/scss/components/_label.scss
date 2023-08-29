@@ -1,0 +1,15 @@
+.label {
+  display: inline-block;
+  position: relative;
+  @extend .link-black;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    bottom: 0;
+    width: 125%;
+    height: 50%;
+    background-color: #e9e2f3;
+    z-index: -1;
+  }
+}

@@ -11,12 +11,16 @@ $utilities: (
     property: letter-spacing,
     class: ls,
     values: (
+      0: 0,
       1: 1rem,
       1s: 1.25rem,
       1m: 1.5rem,
       2: 2rem,
       2m: 2.5rem,
       3: 3rem,
+      4: 4rem,
+      5: 5rem,
+      6: 6rem,
     ),
   ),
   "border": (
@@ -61,6 +65,11 @@ $utilities: (
         var(--#{$prefix}border-color),
       0: 0,
     ),
+  ),
+  "position1": (
+    property: position,
+    responsive: true,
+    values: static relative absolute fixed sticky,
   ),
   "width": (
     property: width,

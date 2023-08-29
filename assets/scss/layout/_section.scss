@@ -1,3 +1,10 @@
+.col-full-3 {
+  @include full {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
 .main-section2 {
   background: radial-gradient(
     105.81% 105.81% at 50% 50%,

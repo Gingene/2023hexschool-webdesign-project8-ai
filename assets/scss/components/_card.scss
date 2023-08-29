@@ -1,4 +1,4 @@
-@mixin img-card($link) {
+@mixin img-card($link, $h) {
   background-image: url($link);
   background-size: cover;
   max-width: 100%;
@@ -10,28 +10,26 @@
   @include pc {
     aspect-ratio: 2 / 3;
   }
+  @include full {
+    height: $h;
+    aspect-ratio: initial;
+  }
 }
 
 .img-card1 {
-  @include img-card("../images/diane.png");
-  @include fl {
-    height: 676px;
-  }
+  @include img-card("../images/diane.png", 676px);
 }
 
 .img-card2 {
-  @include img-card("../images/felix.png");
+  @include img-card("../images/felix.png", 580px);
 }
 
 .img-card3 {
-  @include img-card("../images/karina.png");
+  @include img-card("../images/karina.png", 580px);
 }
 
 .img-card4 {
-  @include img-card("../images/vito.png");
-  @include fl {
-    height: 676px;
-  }
+  @include img-card("../images/vito.png", 676px);
 }
 
 .offset-left-2x {

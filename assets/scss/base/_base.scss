@@ -83,7 +83,7 @@ h6 {
   }
 }
 
-@mixin fl {
+@mixin full {
   @media (min-width: 1920px) {
     @content;
   }

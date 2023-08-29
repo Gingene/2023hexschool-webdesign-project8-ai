@@ -20,6 +20,10 @@ if (getCurrentFileName() === "product.html") {
   productRender();
 }
 
+if (getCurrentFileName() === "about_us.html") {
+  aboutHandler();
+}
+
 console.log("Hello world!");
 
 function indexHandler() {
@@ -109,4 +113,34 @@ function productHandler() {
       (char, i) => `<span style="transform:rotate(${i * 20}deg)">${char}</span>`
     )
     .join("");
+}
+
+function aboutHandler() {
+  const swiper4 = new Swiper(".sw4", {
+    // 分頁、左右箭頭、滾動條若有使用則必需設定
+    // 分頁
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    //
+    // slidesPerView: 3,
+    // spaceBetween: 30,
+    breakpoints: {
+      // when window width is >= moblie
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      // when window width is >= pad
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      // when window width is >= pc
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+    },
+  });
 }
