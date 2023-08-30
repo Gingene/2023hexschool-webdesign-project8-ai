@@ -1,0 +1,10 @@
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="point_scan">
+<mask id="mask0_450_2697" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+<rect id="Bounding box" x="0.5" width="24" height="24" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_450_2697)">
+<path id="point_scan_2" d="M12.5 14C11.95 14 11.4792 13.8042 11.0875 13.4125C10.6958 13.0208 10.5 12.55 10.5 12C10.5 11.45 10.6958 10.9792 11.0875 10.5875C11.4792 10.1958 11.95 10 12.5 10C13.05 10 13.5208 10.1958 13.9125 10.5875C14.3042 10.9792 14.5 11.45 14.5 12C14.5 12.55 14.3042 13.0208 13.9125 13.4125C13.5208 13.8042 13.05 14 12.5 14ZM11.5 8V3H13.5V8H11.5ZM11.5 21V16H13.5V21H11.5ZM16.5 13V11H21.5V13H16.5ZM3.5 13V11H8.5V13H3.5Z" fill="black"/>
+</g>
+</g>
+</svg>
