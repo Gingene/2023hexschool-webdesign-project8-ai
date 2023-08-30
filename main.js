@@ -45,14 +45,9 @@ function indexHandler() {
   });
 
   const swiper2 = new Swiper(".sw2", {
-    // 分頁、左右箭頭、滾動條若有使用則必需設定
-    // 分頁
     pagination: {
       el: ".swiper-pagination",
     },
-    //
-    // slidesPerView: 3,
-    // spaceBetween: 30,
     breakpoints: {
       // when window width is >= moblie
       320: {

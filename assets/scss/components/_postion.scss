@@ -1,0 +1,8 @@
+.news-arrow {
+  right: 0;
+  bottom: -48px;
+  @include pc {
+    right: -64px;
+    bottom: 0;
+  }
+}

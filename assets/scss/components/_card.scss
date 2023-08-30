@@ -32,26 +32,6 @@
   @include img-card("../images/vito.png", 676px);
 }
 
-.offset-left-2x {
-  @include xxl {
-    margin-left: -16.6666667%;
-    margin-right: 16.6666667%;
-  }
-}
-
-.offset-left-2 {
-  @include xxl {
-    margin-left: -16.6666667%;
-  }
-}
-
-.offset-right-2 {
-  @include xxl {
-    margin-left: -16.6666667%;
-    margin-right: -16.6666667%;
-  }
-}
-
 @mixin number-card($link) {
   padding: 24px 12px;
   background-color: #000;

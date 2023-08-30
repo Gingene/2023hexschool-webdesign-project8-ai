@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main
+      style="
+        background: radial-gradient(50% 50% at 50% 50%, #28085c 0%, #000 100%);
+      "
+      class="pt-3l pb-5 pt-lg-10 pb-lg-7m"
+    >
+      <div class="container">
+        <div class="d-flex justify-content-lg-center align-items-center">
+          <h2
+            class="text-center text-lg-start fs1-2m fs-lg-3 fw-bold ls-2m ls-lg-3 mb-2m mb-lg-3l"
+          >
+            最新消息
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="mb-m fw-medium">
+              <a href="news.html">
+                <img
+                  src="/assets/images/icon/arrow_insert.svg"
+                  alt="arrow_insert"
+                />返回
+              </a>
+            </div>
+            <picture>
+              <source
+                srcset="/assets/images/news/news_in.png"
+                media="(min-width: 992px)"
+              />
+              <img
+                class="img-fluid"
+                src="/assets/images/mobile/news_in_mobile.png"
+              />
+            </picture>
+          </div>
+          <div class="col-lg-8">
+            <div
+              class="border-top border-bottom py-1m px-1 py-lg-2m position-relative mb-1m"
+            >
+              <div class="d-flex mb-m">
+                <img
+                  src="/assets/images/icon/emergency_w.svg"
+                  alt="emergency_w"
+                  class="me-1"
+                  width="24px"
+                  height="24px"
+                />
+                <time class="fw-medium ls-1">2023.06.30</time>
+              </div>
+              <h3 class="fs1-1s ls-1s mb-l">產品升級公告</h3>
+              <p class="mb-l fw-ln">親愛的客戶們：</p>
+              <p class="mb-l fw-ln">
+                我們榮幸地向您宣布，經過不懈的努力與研發，ALPHABOX+
+                已成功完成最新一代的升級！這次的升級將為您帶來更高的投影解析度、更精準的語音辨識技術，以及更豐富的情感識別功能。我們致力於為您打造最佳的陪伴機器人，讓科技更貼近您的生活。
+              </p>
+              <p class="mb-l fw-ln">
+                在這次升級中，我們提升了投影解析度，讓影像更加清晰細緻，呈現出更真實的視覺效果。您將能夠更加享受在家中觀看高清影片或欣賞美景的樂趣。同時，我們優化了語音辨識技術，使機器人能更迅速且準確地識別您的聲音指令，提高互動體驗。
+              </p>
+              <p class="mb-l fw-ln">
+                此外，我們增加了情感識別功能，使得機器人能更好地理解您的情緒，並根據您的需求提供適當的陪伴與支持。無論您需要傾聽、建議還是安慰，ALPHABOX+
+                都將成為您身邊的貼心夥伴。
+              </p>
+              <p class="mb-l fw-ln">
+                為感謝您一直以來對我們的支持，我們將在本月舉辦限時優惠活動，凡購買升級版3D立體投影陪伴機器人的客戶，均可享有九折優惠。機會難得，千萬不要錯過喔！
+              </p>
+              <p class="mb-l fw-ln">
+                在未來的日子裡，我們將繼續投入研發，並積極採納用戶意見，以不斷完善產品功能並提高使用體驗。同時，我們承諾會為您提供優質的售後服務，確保您在購買與使用過程中得到全面支持。
+              </p>
+              <p class="mb-l fw-ln">
+                再次感謝您對我們的信任與支持，讓我們攜手共創更美好的未來！若您對升級版3D立體投影陪伴機器人有任何疑問或建議，請隨時與我們的客服團隊聯繫，我們將竭誠為您解答。
+              </p>
+              <p class="mb-l fw-ln">敬祝 興旺發達！</p>
+              <p class="fw-ln">ALPHABOX+ 團隊敬上</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div>
+                <a href="#">
+                  <img
+                    src="/assets/images/icon/line_start_arrow_notch.svg"
+                    alt="arrow_start"
+                  />
+                  <p class="mb-0 fs-lm">
+                    <span class="d-lg-none">上一則</span>
+                    <span class="d-none d-lg-block" style="letter-spacing: 14px"
+                      >限時優惠活動</span
+                    >
+                  </p>
+                </a>
+              </div>
+              <div>
+                <button class="border-0 bg-black" disabled>
+                  <img
+                    src="/assets/images/icon/line_end_arrow_notch_gray.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

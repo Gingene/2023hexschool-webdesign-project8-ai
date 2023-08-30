@@ -6,6 +6,20 @@ $utilities: (
     class: fs1,
     values: $font-sizes,
   ),
+  "font-weight1": (
+    property: font-weight,
+    class: fw,
+    values: (
+      lighter: $font-weight-lighter,
+      light: $font-weight-light,
+      ln: 350,
+      normal: $font-weight-normal,
+      medium: $font-weight-medium,
+      semibold: $font-weight-semibold,
+      bold: $font-weight-bold,
+      bolder: $font-weight-bolder,
+    ),
+  ),
   "letter-spacing": (
     responsive: true,
     property: letter-spacing,

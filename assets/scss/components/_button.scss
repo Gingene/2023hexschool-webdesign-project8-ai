@@ -6,9 +6,25 @@
   border-radius: 4px;
 }
 
+@mixin blue-btn {
+  @extend .btn;
+  @extend .fw-medium;
+  background-color: #6e01f8;
+  color: #fff;
+  border-radius: 4px;
+}
+
 .white-btn {
   @include white-btn;
   &:hover {
     background-color: $main;
+  }
+}
+
+.blue-btn {
+  @include blue-btn;
+  &:hover {
+    background-color: #fff;
+    color: #000;
   }
 }
