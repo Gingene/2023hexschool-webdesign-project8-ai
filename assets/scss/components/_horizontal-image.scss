@@ -1,0 +1,42 @@
+@mixin horizontal-image {
+  background-size: cover;
+  background-position: center center;
+  height: 196px;
+  display: flex;
+  align-items: center;
+  @include pad {
+    height: 232px;
+  }
+}
+
+.horizontal-image1 {
+  @include horizontal-image;
+  background-image: url(/assets/images/mobile/diane_choose.png);
+  @include pc {
+    background-image: url(/assets/images/horizontal/diane_horizontal.png);
+  }
+}
+
+.horizontal-image2 {
+  @include horizontal-image;
+  background-image: url(/assets/images/mobile/felix_choose.png);
+  @include pc {
+    background-image: url(/assets/images/horizontal/felix_horizontal.png);
+  }
+}
+
+.horizontal-image3 {
+  @include horizontal-image;
+  background-image: url(/assets/images/mobile/karina_choose.png);
+  @include pc {
+    background-image: url(/assets/images/horizontal/karina_horizontal.png);
+  }
+}
+
+.horizontal-image4 {
+  @include horizontal-image;
+  background-image: url(/assets/images/mobile/vito_choose.png);
+  @include pc {
+    background-image: url(/assets/images/horizontal/vito_horizontal.png);
+  }
+}

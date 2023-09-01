@@ -8,6 +8,7 @@ $utilities: (
   ),
   "font-weight1": (
     property: font-weight,
+    responsive: true,
     class: fw,
     values: (
       lighter: $font-weight-lighter,
@@ -18,6 +19,7 @@ $utilities: (
       semibold: $font-weight-semibold,
       bold: $font-weight-bold,
       bolder: $font-weight-bolder,
+      900: $font-weight-900,
     ),
   ),
   "letter-spacing": (
