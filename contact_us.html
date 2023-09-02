@@ -15,13 +15,13 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
 />
-    <script type="module" crossorigin src="/2023hexschool-webdesign-project8-ai/assets/main-2195d1e1.js"></script>
-    <link rel="stylesheet" href="/2023hexschool-webdesign-project8-ai/assets/main-0ae8e1ad.css">
+    <script type="module" crossorigin src="/2023hexschool-webdesign-project8-ai/assets/main-afa6e5e1.js"></script>
+    <link rel="stylesheet" href="/2023hexschool-webdesign-project8-ai/assets/main-04e496dd.css">
   </head>
   <body>
     <header>
   <nav
-    class="navbar navbar-expand-xl navbar-dark border-bottom"
+    class="navbar navbar-expand-xl navbar-dark"
     style="background-color: #7000ff"
   >
     <div class="container">
@@ -86,13 +86,13 @@
   </nav>
 </header>
     <main class="pt-3l pt-lg-4 main-section2 border-bottom">
-      <div class="container">
+      <div class="container mb-5 mb-lg-10">
         <h2
           class="fs1-2m fs1-lg-4 fw-900 ls-2m ls-lg-3 mb-2m mb-lg-1 text-white"
         >
           聯絡我們
         </h2>
-        <div class="row mb-5 mb-lg-10">
+        <div class="row">
           <div class="col-lg-6 offset-lg-1 mb-3l mb-lg-0">
             <p class="text-white mb-2 mb-lg-4">
               您的意見與需求對我們至關重要！如果您對 ALPHABOX+
@@ -107,10 +107,12 @@
                 <input
                   type="text"
                   class="form-control fw-bold fs1-1 fs1-lg-1s rounded-0"
-                  id="floatingInputName"
+                  name="contactName"
+                  id="contactName"
                   placeholder="姓名"
+                  required
                 />
-                <label for="floatingInput1" class="fw-bold fs1-1 fs1-lg-1s"
+                <label for="contactName" class="fw-bold fs1-1 fs1-lg-1s"
                   >姓名</label
                 >
               </div>
@@ -118,23 +120,27 @@
                 <input
                   type="email"
                   class="form-control fw-bold fs1-1 fs1-lg-1s rounded-0"
-                  id="floatingInputEmail"
+                  namq="contactEmail"
+                  id="contactEmail"
                   placeholder="Email"
+                  required
                 />
                 <label
-                  for="floatingInput2"
+                  for="contactEmail"
                   class="fw-bold fs1-1 fs1-lg-1s text-uppercase"
                   >Email</label
                 >
               </div>
               <div class="form-floating mb-1">
                 <input
-                  type="text"
+                  type="tel"
                   class="form-control fw-bold fs1-1 fs1-lg-1s rounded-0"
-                  id="floatingInputPhone"
+                  name="contactPhone"
+                  id="contactPhone"
                   placeholder="聯絡電話"
+                  required
                 />
-                <label for="floatingInput3" class="fw-bold fs1-1 fs1-lg-1s"
+                <label for="contactPhone" class="fw-bold fs1-1 fs1-lg-1s"
                   >聯絡電話</label
                 >
               </div>
@@ -142,11 +148,12 @@
                 <textarea
                   class="form-control fw-bold fs1-1 fs1-lg-1s rounded-0"
                   placeholder="Leave a comment here"
-                  id="floatingInput4"
+                  name="contactText"
+                  id="contactText"
                   style="height: 120px"
                 ></textarea>
                 <label
-                  for="floatingInput4"
+                  for="contactText"
                   class="fw-bold fs1-1 fs1-lg-1s text-uppercase"
                   >Comments</label
                 >
@@ -182,9 +189,11 @@
             </div>
           </div>
         </div>
-        <div>
+      </div>
+      <div class="border-top">
+        <div class="container">
           <ul
-            class="list-unstyled d-flex flex-column flex-lg-row justify-content-end pt-2m pb-2m py-lg-0 mb-0 border-top"
+            class="list-unstyled d-flex flex-column flex-lg-row justify-content-end pt-2m pb-2m py-lg-0 mb-0"
           >
             <li class="mb-1 mb-lg-0 me-lg-4m">
               <a href="#" class="fw-ln pt-lg-2m pb-lg-3">INSTAGRAM</a>
