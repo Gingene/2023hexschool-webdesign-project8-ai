@@ -99,4 +99,9 @@ $utilities: (
       auto: auto,
     ),
   ),
+  "overflow-x1": (
+    property: overflow-x,
+    responsive: true,
+    values: initial auto hidden visible scroll,
+  ),
 );

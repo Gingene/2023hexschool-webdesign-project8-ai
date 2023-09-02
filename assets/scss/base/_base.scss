@@ -16,6 +16,10 @@ a {
   display: block;
 }
 
+.underline-link {
+  text-decoration: underline;
+}
+
 .bg-lg {
   background: linear-gradient(180deg, #7000ff 0%, #11002d 100%);
 }
@@ -43,20 +47,6 @@ h4,
 h5,
 h6 {
   margin-bottom: 0;
-}
-
-.fs-m {
-  font-size: 128px;
-}
-
-.fs-md-l {
-  @media (min-width: 768px) {
-    font-size: 400px;
-  }
-}
-
-.mb-18 {
-  margin-bottom: 18px;
 }
 
 @mixin pad {

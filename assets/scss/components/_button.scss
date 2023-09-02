@@ -28,3 +28,35 @@
     color: #000;
   }
 }
+
+@mixin white-outline-btn {
+  @extend .btn;
+  @extend .btn-outline-white;
+  @extend .rounded-pill;
+  @extend .text-center;
+  padding: 0 1.5rem;
+}
+
+.white-outline-btn {
+  @include white-outline-btn;
+  &:hover {
+    color: $main;
+  }
+}
+
+@mixin close-btn {
+  @extend .btn;
+  @extend .btn-white;
+  @extend .rounded-circle;
+}
+
+.close-btn {
+  @include close-btn;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.08));
+  padding: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  &:hover {
+    opacity: 0.5;
+  }
+}

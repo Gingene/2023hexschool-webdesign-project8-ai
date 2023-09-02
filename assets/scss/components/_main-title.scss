@@ -11,6 +11,7 @@
   @extend .ff-sh;
   font-size: 1.25rem;
   font-weight: 400;
+  overflow-x: auto;
   @include pc {
     font-size: 2rem;
   }
@@ -20,4 +21,10 @@
   @include main-title(4.8px, 16px);
   font-size: 1rem;
   font-weight: 700;
+}
+
+.title-hover {
+  &:hover {
+    border-bottom: 2px solid #000;
+  }
 }
