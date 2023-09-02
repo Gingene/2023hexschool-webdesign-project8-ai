@@ -1,0 +1,64 @@
+@mixin img-card($link, $h) {
+  background-image: url($link);
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  &:hover {
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.8);
+  }
+  @include pc {
+    aspect-ratio: 2 / 3;
+  }
+  @include full {
+    height: $h;
+    aspect-ratio: initial;
+  }
+}
+
+.img-card1 {
+  @include img-card("../images/diane.png", 676px);
+}
+
+.img-card2 {
+  @include img-card("../images/felix.png", 580px);
+}
+
+.img-card3 {
+  @include img-card("../images/karina.png", 580px);
+}
+
+.img-card4 {
+  @include img-card("../images/vito.png", 676px);
+}
+
+@mixin number-card($link) {
+  padding: 24px 12px;
+  background-color: #000;
+  background-blend-mode: darken;
+  background-image: url($link);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  @media (min-width: 768px) {
+    padding: 24px 40px 56px;
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.number-card-1 {
+  @include number-card("../images/diane_vertical.png");
+}
+.number-card-2 {
+  @include number-card("../images/felix_vertical.png");
+}
+.number-card-3 {
+  @include number-card("../images/karina_vertical.png");
+}
+.number-card-4 {
+  @include number-card("../images/vito_vertical.png");
+}

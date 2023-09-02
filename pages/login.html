@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main
+      class="pt-3l pb-5 pt-lg-4 pb-lg-10 main-section2 border-bottom position-relative"
+    >
+      <div class="container">
+        <h2
+          class="fs1-2m fs1-lg-4 fw-900 ls-2m ls-lg-4 text-white position-lg-absolute"
+          style="top: 160px"
+        >
+          登入
+        </h2>
+        <div class="d-flex justify-content-center align-items-center">
+          <div
+            class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              src="/assets/images/circle.png"
+              class="img-fluid mb-1m"
+              width="196px"
+              height="196px"
+              alt="text-circle"
+              style="animation: rotateText 10s linear infinite"
+            />
+            <h2 class="ff-sh fs-1m fs1-md-2 mb-2">ALPHABOX+</h2>
+            <a href="#" class="white-outline-btn w1-100 mb-1">
+              <img
+                src="/assets/images/icon/apple_icon.png"
+                alt="apple_icon"
+                width="40px"
+                height="40px"
+                style="padding: 10px"
+              />Continue with Apple
+            </a>
+            <a href="#" class="white-outline-btn w1-100 mb-1m">
+              <img
+                src="/assets/images/icon/google_icon.png"
+                alt="apple_icon"
+                width="40px"
+                height="40px"
+                style="padding: 10px"
+              />Continue with Google
+            </a>
+            <p
+              class="mb-1m w1-100 d-flex justify-content-center align-items-center"
+            >
+              <span class="line1"></span><span class="linef">or</span
+              ><span class="line1"></span>
+            </p>
+            <form class="section2 w1-100">
+              <div class="form-floating mb-1">
+                <input
+                  type="email"
+                  class="form-control fw-bold fs1-1 fs1-lg-1s rounded-0"
+                  id="loginEmail"
+                  placeholder="Email"
+                  required
+                />
+                <label
+                  for="loginEmail"
+                  class="fw-bold fs1-1 fs1-lg-1s text-uppercase"
+                  >Email</label
+                >
+              </div>
+              <div class="form-floating mb-1">
+                <input
+                  type="password"
+                  class="form-control fw-bold fs1-1 fs1-lg-1s rounded-0"
+                  id="loginPassword"
+                  placeholder="密碼"
+                  required
+                />
+                <label for="floatingInput3" class="fw-bold fs1-1 fs1-lg-1s"
+                  >密碼</label
+                >
+              </div>
+
+              <button type="submit" class="blue-btn py-m px-1 w1-100 mb-m">
+                <span class="material-symbols-outlined"> point_scan </span
+                >立即登入
+              </button>
+              <p class="text-end text-white mb-0">
+                <a href="#" class="d-inline-block text-white underline-link"
+                  >忘記密碼</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

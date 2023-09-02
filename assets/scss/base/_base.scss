@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  // outline: 1px solid lightgreen;
+}
+
+body {
+  color: white;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  display: block;
+}
+
+.underline-link {
+  text-decoration: underline;
+}
+
+.bg-lg {
+  background: linear-gradient(180deg, #7000ff 0%, #11002d 100%);
+}
+
+.ff-sh {
+  font-family: "Shrikhand", cursive;
+}
+
+.ff-sec {
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+li.nav-item {
+  flex-shrink: 0;
+}
+
+.material-symbols-outlined {
+  vertical-align: bottom;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+@mixin pad {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin full {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}

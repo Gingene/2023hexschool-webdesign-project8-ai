@@ -1,0 +1,20 @@
+@mixin rowbar {
+  height: 40px;
+  background: linear-gradient(90deg, #7000ff 0%, #11002d 100%);
+}
+
+.rowbar1 {
+  @include rowbar;
+}
+
+.line1 {
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: #828282;
+}
+
+.linef {
+  display: block;
+  padding: 0 0.25rem;
+}

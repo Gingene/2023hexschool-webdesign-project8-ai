@@ -1,0 +1,107 @@
+$utilities: (
+  "font-size1": (
+    rfs: true,
+    responsive: true,
+    property: font-size,
+    class: fs1,
+    values: $font-sizes,
+  ),
+  "font-weight1": (
+    property: font-weight,
+    responsive: true,
+    class: fw,
+    values: (
+      lighter: $font-weight-lighter,
+      light: $font-weight-light,
+      ln: 350,
+      normal: $font-weight-normal,
+      medium: $font-weight-medium,
+      semibold: $font-weight-semibold,
+      bold: $font-weight-bold,
+      bolder: $font-weight-bolder,
+      900: $font-weight-900,
+    ),
+  ),
+  "letter-spacing": (
+    responsive: true,
+    property: letter-spacing,
+    class: ls,
+    values: (
+      0: 0,
+      1: 1rem,
+      1s: 1.25rem,
+      1m: 1.5rem,
+      2: 2rem,
+      2m: 2.5rem,
+      3: 3rem,
+      4: 4rem,
+      5: 5rem,
+      6: 6rem,
+    ),
+  ),
+  "border": (
+    property: border,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+        var(--#{$prefix}border-color),
+      0: 0,
+    ),
+  ),
+  "border-top": (
+    property: border-top,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+        var(--#{$prefix}border-color),
+      0: 0,
+    ),
+  ),
+  "border-end": (
+    property: border-right,
+    responsive: true,
+    class: border-end1,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+        var(--#{$prefix}border-color),
+      0: 0,
+    ),
+  ),
+  "border-bottom": (
+    property: border-bottom,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+        var(--#{$prefix}border-color),
+      0: 0,
+    ),
+  ),
+  "border-start": (
+    property: border-left,
+    class: border-start,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+        var(--#{$prefix}border-color),
+      0: 0,
+    ),
+  ),
+  "position1": (
+    property: position,
+    responsive: true,
+    values: static relative absolute fixed sticky,
+  ),
+  "width": (
+    property: width,
+    responsive: true,
+    class: w1,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto,
+    ),
+  ),
+  "overflow-x1": (
+    property: overflow-x,
+    responsive: true,
+    values: initial auto hidden visible scroll,
+  ),
+);

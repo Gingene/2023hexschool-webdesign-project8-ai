@@ -1,5 +1,15 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./utils/variables";
+@import "./helper/myutilitiesb";
 
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
 
-@import './pages/index.scss';
+@import "../../node_modules/bootstrap";
+@import "./base/base";
+@import "./layout/container";
+@import "./layout/section";
+@import "./layout/banner";
+@import "./components/components";
+@import "./helper/myutilities";
+// @import "./utils/utilities"; // 查詢通用類別

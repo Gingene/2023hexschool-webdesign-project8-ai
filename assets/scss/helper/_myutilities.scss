@@ -1,0 +1,73 @@
+.pt-banner {
+  padding-top: 2rem;
+  padding-bottom: 3.75rem;
+  @include pc {
+    padding-bottom: 3.25rem;
+  }
+}
+
+.fs-m {
+  font-size: 128px;
+}
+
+.fs-md-l {
+  @media (min-width: 768px) {
+    font-size: 400px;
+  }
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.a11 {
+  aspect-ratio: 1/1;
+}
+
+.mt-full-n4 {
+  @include full {
+    margin-top: -4rem;
+  }
+}
+
+.mt-full-n6 {
+  @include full {
+    margin-top: -6rem;
+  }
+}
+
+.pt-full-3m {
+  @include full {
+    padding-top: 3.5rem !important;
+  }
+}
+
+.w-full-25 {
+  @include full {
+    width: 416px;
+  }
+}
+
+.d-full-block {
+  @include full {
+    display: block !important;
+  }
+}
+
+.position-full-absolute {
+  @include full {
+    position: absolute !important;
+  }
+}
+
+.fs1-full-6 {
+  @include full {
+    font-size: 6rem !important;
+  }
+}
+
+.ls-full-6 {
+  @include full {
+    letter-spacing: 6rem !important;
+  }
+}

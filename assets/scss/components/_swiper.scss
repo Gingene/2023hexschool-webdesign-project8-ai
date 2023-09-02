@@ -1,0 +1,71 @@
+.sw1 img,
+.sw1 figure {
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/images/index01.jpg);
+  @include pc {
+    aspect-ratio: initial;
+    height: 560px;
+  }
+}
+
+.sw3 img,
+.sw3 figure {
+  aspect-ratio: 1.04/1;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-share {
+  background-color: #380c7e;
+}
+
+// scroll-bar
+.swiper-scrollbar-drag {
+  background-color: white !important;
+}
+
+/* 整個滾動條的背景顏色 */
+.swiper-scrollbar {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sw4-slide img {
+  display: block;
+  width: 100%;
+  height: 315px;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  position: initial;
+  margin-top: 0;
+  width: auto;
+  height: auto;
+  &::after {
+    content: "";
+  }
+}
+
+.sw3 .swiper-button-prev {
+  position: absolute;
+  left: 12px;
+  @include pc {
+    left: 16px;
+  }
+}
+
+.sw3 .swiper-button-next {
+  position: absolute;
+  right: 12px;
+  @include pc {
+    right: 16px;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

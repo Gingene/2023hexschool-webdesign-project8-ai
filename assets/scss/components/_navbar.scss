@@ -1,0 +1,16 @@
+.main-navbar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: linear-gradient(180deg, #7000ff 0%, #11002d 100%);
+  @include xl {
+    position: static;
+    background: initial;
+  }
+}
+
+footer a {
+  color: #000;
+}
