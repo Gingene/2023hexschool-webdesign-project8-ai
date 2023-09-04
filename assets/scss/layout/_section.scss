@@ -5,17 +5,22 @@
   }
 }
 
-.main-section2 {
-  background: radial-gradient(
-    105.81% 105.81% at 50% 50%,
-    #28085c 0%,
-    #000 100%
-  );
+.bg-gradient1 {
+  @include gradient-y($main-200, $main-800);
 }
 
-.section2 {
-  color: #1f0f39;
-  a {
-    color: #1f0f39;
-  }
+.bg-gradient2 {
+  @include gradient-c($main-500, $black);
+}
+
+.bg-gradient3 {
+  @include gradient-c($main-600, $black);
+}
+
+.bg-gradient4 {
+  @include gradient-c($black, $main-600);
+}
+
+.bg-gradient5 {
+  @include gradient-c1($main-600, $black);
 }

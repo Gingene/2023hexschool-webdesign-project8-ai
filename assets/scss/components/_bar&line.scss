@@ -1,10 +1,6 @@
-@mixin rowbar {
-  height: 40px;
-  background: linear-gradient(90deg, #7000ff 0%, #11002d 100%);
-}
-
 .rowbar1 {
-  @include rowbar;
+  height: 40px;
+  @include gradient-x($main-200, $main-800);
 }
 
 .line1 {
