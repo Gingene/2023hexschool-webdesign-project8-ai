@@ -10,12 +10,7 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <main
-      style="
-        background: radial-gradient(50% 50% at 50% 50%, #28085c 0%, #000 100%);
-      "
-      class="pt-3l pb-5 pt-lg-10 pb-lg-7m"
-    >
+    <main class="bg-gradient3 pt-3l pb-5 pt-lg-10 pb-lg-7m">
       <div class="container">
         <div class="d-flex justify-content-lg-center align-items-center">
           <h2
@@ -281,7 +276,7 @@
       </div>
     </main>
 
-    <%- include('./layout/footer'); -%>
+    <%- include('./layout/footer'); -%> <%- include('./layout/aos'); -%>
 
     <script type="module" src="../main.js"></script>
   </body>

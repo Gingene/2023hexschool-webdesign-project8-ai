@@ -11,12 +11,13 @@
     <%- include('./layout/header'); -%>
 
     <main
-      class="pt-3l pb-5 pt-lg-4 pb-lg-10 main-section2 border-bottom position-relative"
+      class="pt-3l pb-5 pt-lg-4 pb-lg-10 bg-gradient3 border-bottom position-relative"
     >
       <div class="container">
         <h2
           class="fs1-2m fs1-lg-4 fw-900 ls-2m ls-lg-4 text-white position-lg-absolute"
           style="top: 160px"
+          data-aos="fade-up"
         >
           註冊
         </h2>
@@ -31,9 +32,16 @@
               height="196px"
               alt="text-circle"
               style="animation: rotateText 10s linear infinite"
+              data-aos="fade-up"
             />
-            <h2 class="ff-sh fs-1m fs1-md-2 mb-2">ALPHABOX+</h2>
-            <a href="#" class="white-outline-btn w1-100 mb-1">
+            <h2 class="ff-sh fs-1m fs1-md-2 mb-2" data-aos="fade-up">
+              ALPHABOX+
+            </h2>
+            <a
+              href="#"
+              class="white-outline-btn w1-100 mb-1"
+              data-aos="fade-up"
+            >
               <img
                 src="/assets/images/icon/apple_icon.png"
                 alt="apple_icon"
@@ -42,7 +50,11 @@
                 style="padding: 10px"
               />Continue with Apple
             </a>
-            <a href="#" class="white-outline-btn w1-100 mb-1m">
+            <a
+              href="#"
+              class="white-outline-btn w1-100 mb-1m"
+              data-aos="fade-up"
+            >
               <img
                 src="/assets/images/icon/google_icon.png"
                 alt="apple_icon"
@@ -53,11 +65,12 @@
             </a>
             <p
               class="mb-1m w1-100 d-flex justify-content-center align-items-center"
+              data-aos="fade-up"
             >
               <span class="line1"></span><span class="linef">or</span
               ><span class="line1"></span>
             </p>
-            <form class="section2 w1-100">
+            <form class="section2 w1-100" data-aos="fade-up">
               <div class="form-floating mb-1">
                 <input
                   type="text"
@@ -263,7 +276,7 @@
       </div>
     </main>
 
-    <%- include('./layout/footer'); -%>
+    <%- include('./layout/footer'); -%> <%- include('./layout/aos'); -%>
 
     <script type="module" src="../main.js"></script>
   </body>

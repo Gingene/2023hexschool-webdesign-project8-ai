@@ -10,13 +10,11 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <main
-      style="background-color: #e9e2f3"
-      class="section2 pt-3l pb-5 pt-lg-4 pb-lg-7m"
-    >
+    <main class="bg-main-100 text-main-700 pt-3l pb-5 pt-lg-4 pb-lg-7m">
       <div class="container">
         <h2
-          class="fs1-2m fs1-lg-3 fw-bold fw-lg-900 ls-2m ls-lg-3 mb-2m mb-lg-4 text-black"
+          class="fs1-2m fs1-lg-3 fw-bold fw-lg-900 ls-2m ls-lg-3 mb-2m mb-lg-4"
+          data-aos="fade-up"
         >
           FAQ
         </h2>
@@ -25,14 +23,14 @@
             class="list-unstyled col-lg-4 pt-1m pt-lg-2m"
             style="border-top: 2px dotted white"
           >
-            <li class="fs1-1 fw-medium mb-1">
-              <a href="#">ALPHABOX+ 使用問題</a>
+            <li class="fs1-1 fw-medium mb-1" data-aos="fade-up">
+              <a href="#" class="text-main-700">ALPHABOX+ 使用問題</a>
             </li>
-            <li class="fs1-1 fw-medium mb-1">
-              <a href="#">訂購與運送</a>
+            <li class="fs1-1 fw-medium mb-1" data-aos="fade-up">
+              <a href="#" class="text-main-700">訂購與運送</a>
             </li>
-            <li class="fs1-1 fw-medium mb-1">
-              <a href="#">產品保養與維修</a>
+            <li class="fs1-1 fw-medium mb-1" data-aos="fade-up">
+              <a href="#" class="text-main-700">產品保養與維修</a>
             </li>
           </ul>
           <div
@@ -43,6 +41,7 @@
               <li
                 class="accordion-item pb-2 pb-lg-2m"
                 style="border-bottom: 2px dotted white"
+                data-aos="fade-up"
               >
                 <h2 class="accordion-header" id="headingOne">
                   <button
@@ -70,6 +69,7 @@
               <li
                 class="accordion-item py-2 py-lg-2m"
                 style="border-bottom: 2px dotted white"
+                data-aos="fade-up"
               >
                 <h2 class="accordion-header" id="headingTwo">
                   <button
@@ -97,6 +97,7 @@
               <li
                 class="accordion-item py-2 py-lg-2m"
                 style="border-bottom: 2px dotted white"
+                data-aos="fade-up"
               >
                 <h2 class="accordion-header" id="headingThree">
                   <button
@@ -124,6 +125,7 @@
               <li
                 class="accordion-item py-2 py-lg-2m"
                 style="border-bottom: 2px dotted white"
+                data-aos="fade-up"
               >
                 <h2 class="accordion-header" id="headingFour">
                   <button
@@ -151,6 +153,7 @@
               <li
                 class="accordion-item py-2 py-lg-2m"
                 style="border-bottom: 2px dotted white"
+                data-aos="fade-up"
               >
                 <h2 class="accordion-header" id="headingFive">
                   <button
@@ -178,6 +181,7 @@
               <li
                 class="accordion-item py-2 py-lg-2m"
                 style="border-bottom: 2px dotted white"
+                data-aos="fade-up"
               >
                 <h2 class="accordion-header" id="headingSix">
                   <button
@@ -208,7 +212,7 @@
       </div>
     </main>
 
-    <%- include('./layout/footer'); -%>
+    <%- include('./layout/footer'); -%> <%- include('./layout/aos'); -%>
 
     <script type="module" src="../main.js"></script>
   </body>

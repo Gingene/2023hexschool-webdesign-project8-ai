@@ -9,24 +9,25 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <main class="pt-3l pt-lg-4 main-section2 border-bottom">
+    <main class="pt-3l pt-lg-4 bg-gradient3 border-bottom">
       <div class="container mb-5 mb-lg-10">
         <h2
           class="fs1-2m fs1-lg-4 fw-900 ls-2m ls-lg-3 mb-2m mb-lg-1 text-white"
+          data-aos="fade-up"
         >
           聯絡我們
         </h2>
         <div class="row">
           <div class="col-lg-6 offset-lg-1 mb-3l mb-lg-0">
-            <p class="text-white mb-2 mb-lg-4">
+            <p class="text-white mb-2 mb-lg-4" data-aos="fade-up">
               您的意見與需求對我們至關重要！如果您對 ALPHABOX+
               有任何疑問、建議或需求，請隨時填寫以下表單，我們將在 24
               小時內回覆您。您的寶貴意見將幫助我們不斷改進產品與服務，為您帶來更優質的體驗。
             </p>
-            <p class="fw-bold text-white mb-2 mb-lg-4">
+            <p class="fw-bold text-white mb-2 mb-lg-4" data-aos="fade-up">
               我們期待您的來信與來電，竭誠為您解答。讓我們攜手共創更美好的未來！
             </p>
-            <form class="section2">
+            <form class="section2" data-aos="fade-up">
               <div class="form-floating mb-1">
                 <input
                   type="text"
@@ -88,13 +89,13 @@
             </form>
           </div>
           <div class="col-lg-4 offset-lg-1">
-            <div class="mb-2m">
+            <div class="mb-2m" data-aos="fade-up">
               <p class="fs1-1 text-white text-opacity-50 mb-0">客服時間</p>
               <p class="mb-0">
                 <a href="#">週一至週五 09:00-18:00</a>
               </p>
             </div>
-            <div class="mb-2m">
+            <div class="mb-2m" data-aos="fade-up">
               <p class="fs1-1 text-white text-opacity-50 mb-0">聯絡地址</p>
               <address class="mb-0">
                 <a href="https://goo.gl/maps/2j5u7oehZmgsJker6" target="_blank"
@@ -102,7 +103,7 @@
                 >
               </address>
             </div>
-            <div>
+            <div data-aos="fade-up">
               <p class="fs1-1 text-white text-opacity-50 mb-0">聯絡方式</p>
               <address>
                 <a href="tel:+886-2-12345678">+886-2-12345678</a>
@@ -119,16 +120,16 @@
           <ul
             class="list-unstyled d-flex flex-column flex-lg-row justify-content-end pt-2m pb-2m py-lg-0 mb-0"
           >
-            <li class="mb-1 mb-lg-0 me-lg-4m">
+            <li class="mb-1 mb-lg-0 me-lg-4m" data-aos="fade-up">
               <a href="#" class="fw-ln pt-lg-2m pb-lg-3">INSTAGRAM</a>
             </li>
-            <li class="mb-1 mb-lg-0 me-lg-4m">
+            <li class="mb-1 mb-lg-0 me-lg-4m" data-aos="fade-up">
               <a href="#" class="fw-ln pt-lg-2m pb-lg-3">FACEBOOK</a>
             </li>
-            <li class="mb-1 mb-lg-0 me-lg-4m">
+            <li class="mb-1 mb-lg-0 me-lg-4m" data-aos="fade-up">
               <a href="#" class="fw-ln pt-lg-2m pb-lg-3">TWITTER</a>
             </li>
-            <li>
+            <li data-aos="fade-up">
               <a href="#" class="fw-ln pt-lg-2m pb-lg-3">LINKEDIN</a>
             </li>
           </ul>
@@ -139,16 +140,17 @@
       <div class="container mb-1m mb-lg-5">
         <h2
           class="fs1-2m fs1-lg-3 fw-bold fw-lg-900 ls-2m ls-lg-4 mb-2m mb-lg-4 text-black"
+          data-aos="fade-up"
         >
           選擇自己要的角色
         </h2>
-        <h3 class="fs1-1m fs1-lg-3 fw-900">
+        <h3 class="fs1-1m fs1-lg-3 fw-900" data-aos="fade-up">
           <span class="me-m me-lg-1m" style="color: #6e01f8">20K+</span>
           <span class="text-black">使用者喜歡我們的服務</span>
         </h3>
       </div>
       <div>
-        <div class="position-md-relative d-md-flex">
+        <div class="position-md-relative d-md-flex" data-aos="fade-up">
           <div
             class="horizontal-image1 w1-md-75 position-md-absolute"
             style="z-index: -1"
@@ -170,6 +172,7 @@
         </div>
         <div
           class="position-md-relative d-md-flex justify-content-end text-end"
+          data-aos="fade-up"
         >
           <div
             class="horizontal-image2 w1-md-75 position-md-absolute"
@@ -190,7 +193,7 @@
             </h3>
           </div>
         </div>
-        <div class="position-md-relative d-md-flex">
+        <div class="position-md-relative d-md-flex" data-aos="fade-up">
           <div
             class="horizontal-image3 w1-md-75 position-md-absolute"
             style="z-index: -1"
@@ -212,6 +215,7 @@
         </div>
         <div
           class="position-md-relative d-md-flex justify-content-end text-end"
+          data-aos="fade-up"
         >
           <div
             class="horizontal-image4 w1-md-75 position-md-absolute"
@@ -234,7 +238,7 @@
         </div>
       </div>
     </section>
-    <%- include('./layout/footer'); -%>
+    <%- include('./layout/footer'); -%> <%- include('./layout/aos'); -%>
 
     <script type="module" src="../main.js"></script>
   </body>

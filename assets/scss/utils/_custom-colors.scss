@@ -1,0 +1,24 @@
+$main-100: #e9e2f3;
+$main-200: #7000ff;
+$main-300: #6e01f8;
+$main-400: #380c7e;
+$main-500: #300871;
+$main-600: #28085c;
+$main-700: #1f0f39;
+$main-800: #11002d;
+// ...其餘紫色
+
+$custom-colors: (
+  "main-100": $main-100,
+  "main-200": $main-200,
+  "main-300": $main-300,
+  "main-400": $main-400,
+  "main-500": $main-500,
+  "main-600": $main-600,
+  "main-700": $main-700,
+  "main-800": $main-800,
+  // 依此類推...
+);
+
+// 合併到色彩設定
+$theme-colors: map-merge($theme-colors, $custom-colors);

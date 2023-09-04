@@ -21,9 +21,24 @@ async function productRender() {
       // 第1區
       productImage1.style.backgroundImage = `url(${data[number].image.p1})`;
       productImage2.style.backgroundImage = `url(${data[number].image.p2})`;
+
       product0Node.children[0].innerText = data[number].name;
       product0Node.children[1].innerText = data[number].type;
       product0Node.children[2].innerText = data[number].function;
+
+      productImage1.classList.add("fadeup");
+      productImage2.classList.add("fadeup");
+      product0Node.children[0].classList.add("fadeup");
+      product0Node.children[1].classList.add("fadeup");
+      product0Node.children[2].classList.add("fadeup");
+      product0Node.children[0].addEventListener("animationend", () => {
+        productImage1.classList.remove("fadeup");
+        productImage2.classList.remove("fadeup");
+        product0Node.children[0].classList.remove("fadeup");
+        product0Node.children[1].classList.remove("fadeup");
+        product0Node.children[2].classList.remove("fadeup");
+      });
+
       // 第2區
       product1.children[0].children[0].children[0].childNodes[2].textContent =
         data[number].function;
