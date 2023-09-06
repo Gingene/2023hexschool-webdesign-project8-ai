@@ -1,6 +1,11 @@
 .rowbar1 {
   height: 40px;
-  @include gradient-x($main-200, $main-800);
+  @include gradient-xr($main-200, $main-800);
+}
+
+.rowbar2 {
+  height: 40px;
+  @include gradient-xl($main-200, $main-800);
 }
 
 .line1 {

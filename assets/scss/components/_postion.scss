@@ -6,3 +6,17 @@
     bottom: 0;
   }
 }
+
+.watermark {
+  color: rgba(255, 255, 255, 0.04);
+  left: -70%;
+  bottom: -90px;
+  z-index: 0;
+  @include pad {
+    left: -40%;
+    bottom: -290px;
+  }
+  @include pc {
+    left: -20%;
+  }
+}
