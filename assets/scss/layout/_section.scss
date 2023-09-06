@@ -7,6 +7,10 @@
 
 .bg-gradient1 {
   @include gradient-y($main-200, $main-800);
+  @include pc {
+    background-image: url(/assets/images/home_background.png);
+    background-size: cover;
+  }
 }
 
 .bg-gradient2 {
