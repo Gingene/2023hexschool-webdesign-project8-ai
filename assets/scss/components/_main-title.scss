@@ -11,9 +11,11 @@
   @extend .ff-sh;
   font-size: 1.25rem;
   font-weight: 400;
-  overflow-x: auto;
   @include pc {
     font-size: 2rem;
+  }
+  @media (max-width: 360px) {
+    letter-spacing: 1rem;
   }
 }
 

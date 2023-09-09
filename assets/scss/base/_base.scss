@@ -45,6 +45,10 @@ h6 {
   margin-bottom: 0;
 }
 
+figure {
+  margin: 0;
+}
+
 @mixin pad {
   @media (min-width: 768px) {
     @content;
