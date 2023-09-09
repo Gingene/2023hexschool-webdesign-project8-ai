@@ -10,6 +10,14 @@
   }
 }
 
+.sw2 {
+  pointer-events: none;
+  @include pad {
+    pointer-events: initial;
+    width: 100vw;
+  }
+}
+
 .sw3 img,
 .sw3 figure {
   aspect-ratio: 1.04/1;

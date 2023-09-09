@@ -26,15 +26,21 @@ if (getCurrentFileName() === "about_us.html") {
   aboutHandler();
 }
 
-console.log("Hello world!");
-
 function indexHandler() {
+  const header = document.querySelector("#header");
+
+  header.classList.add("border-bottom");
   const swiper1 = new Swiper(".sw1", {
     // 分頁、左右箭頭、滾動條若有使用則必需設定
     // 分頁
     pagination: {
       el: ".swiper-pagination",
     },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    effect: "cube",
     //
     slidesPerView: 1,
     spaceBetween: 24,
@@ -47,32 +53,22 @@ function indexHandler() {
   });
 
   const swiper2 = new Swiper(".sw2", {
-    pagination: {
-      el: ".swiper-pagination",
-    },
+    direction: "vertical",
+    spaceBetween: 24,
+    slidesPerView: "auto",
+
     breakpoints: {
-      // when window width is >= moblie
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 24,
-      },
       // when window width is >= pad
       768: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      // when window width is >= pc
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 24,
+        direction: "horizontal",
       },
     },
-    // spaceBetween: 24,
 
     // 滾動條
     scrollbar: {
       el: ".swiper-scrollbar",
     },
+    mousewheel: true,
   });
 
   const text2 = document.querySelector(".text2 p");
@@ -83,6 +79,27 @@ function indexHandler() {
     )
     .join("");
   console.log(swiper2, text2);
+  indexNewsHandler();
+}
+function indexNewsHandler() {
+  const indexNews = document.querySelectorAll(".index-news");
+
+  indexNews.forEach((el) => {
+    el.addEventListener("mouseover", (e) => {
+      e.stopPropagation();
+      // console.dir(e.target);
+      e.target.style = "cursor: pointer;";
+    });
+
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (el === indexNews[0]) {
+        location.href = "news1.html";
+      } else {
+        location.href = "#";
+      }
+    });
+  });
 }
 
 function productHandler() {

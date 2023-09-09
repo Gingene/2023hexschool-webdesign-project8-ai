@@ -71,3 +71,15 @@
     letter-spacing: 6rem !important;
   }
 }
+
+.ls-s-1 {
+  @media (max-width: 370px) {
+    letter-spacing: 1rem !important;
+  }
+}
+
+.ls-s-1m {
+  @media (max-width: 370px) {
+    letter-spacing: 1.5rem !important;
+  }
+}
