@@ -81,6 +81,7 @@ function indexHandler() {
   console.log(swiper2, text2);
   indexNewsHandler();
 }
+
 function indexNewsHandler() {
   const indexNews = document.querySelectorAll(".index-news");
 
