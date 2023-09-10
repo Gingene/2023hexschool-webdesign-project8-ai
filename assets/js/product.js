@@ -15,7 +15,7 @@ async function productRender() {
       let number = e.target.dataset.number;
       e.preventDefault();
       e.stopPropagation();
-      removeProductActive();
+      removeActive("#productNav");
       e.target.classList.add("active");
       // console.log(data[number]);
       // 第1區
@@ -71,8 +71,8 @@ async function getRenderData() {
   return data;
 }
 
-function removeProductActive() {
-  const productNav = document.querySelector("#productNav");
+function removeActive(id) {
+  const productNav = document.querySelector(id);
   for (let i of productNav.children) {
     i.children[0].classList.remove("active");
   }
