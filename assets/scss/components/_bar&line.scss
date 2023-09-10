@@ -8,6 +8,17 @@
   @include gradient-xl($main-200, $main-800);
 }
 
+.line-w {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 172px;
+  @include pc {
+    top: 240px;
+  }
+}
+
 .line1 {
   display: block;
   width: 50%;
